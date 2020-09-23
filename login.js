@@ -23,6 +23,8 @@ function login(e){
     e.preventDefault();
 
     // TODO: set cookie/token per session || destroy cookie on logout
+    
+
     let emailValue = document.querySelector('#email-login').value
     let passwordValue = document.querySelector('#password-login').value
     

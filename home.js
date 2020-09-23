@@ -14,20 +14,24 @@ function displayAllPosts(){
 
     if (posts.length > 0){
         posts.forEach((post, i) => {
-            console.log(i)
             let newPost = document.createElement('div');
             let title = document.createElement('h4');
             let body = document.createElement('p');
             let deleteBtn = document.createElement('button')
             let editBtn = document.createElement('button')
 
-            newPost.id = `post ${i}`;
-            newPost.style.boxShadow = '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19';
             deleteBtn.innerHTML = 'Delete';
             editBtn.innerHTML = 'Edit';
 
-            deleteBtn.className= `delBtn ${i}`;
-            editBtn.className = `editBtn ${i}`;
+            deleteBtn.className= `delBtn postBtn ${i}`;
+            editBtn.className = `editBtn postBtn ${i}`;
+
+            newPost.className = `post ${i}`;
+            newPost.style.border = '1px solid #838d8a'
+            newPost.style.padding = '2%';
+            newPost.style.borderRadius = '15px';
+            newPost.style.marginBottom = '1%';
+            
 
             title.innerHTML = post.title
             body.innerHTML = post.body;
@@ -92,3 +96,8 @@ function editPost() {
 displayAllPosts();
 deletePost();
 editPost();
+
+function logout(){
+    // TODO: destroy token
+    window.location.replace("login.html");
+}

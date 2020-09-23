@@ -4,26 +4,29 @@
         <title>Simple Blog</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <header>
             <h1>Simple Blog App</h1>
         </header>
-        <main>
+        <div class="auth">
             <section>
-                <form id="login-form" onsubmit="login()">
-                    <fieldset>
-                        <legend>Login</legend>
+                <fieldset>
+                    <legend>Login</legend>
+                    <form id="login-form" onsubmit="login()">
                         <label for="email-login">Email Address</label>
-                        <input type="email" name="email" id="email-login" autocomplete="email">
+                        <input type="email" name="email" id="email-login" autocomplete="email"> <br>
                         <label for="password-login">Password</label>
-                        <input type="password" name="password" id="password-login" autocomplete="current-password">
-                        <button type="submit">Login</button>
-                        <p>Don't have an account?<a href="signup.html"> Sign up</a></p>
-                    </fieldset>
-                </form> 
+                        <input type="password" name="password" id="password-login" autocomplete="current-password"> <br>
+                        
+                        <button type="submit" class="authBtn">LOGIN</button>
+                        <span>Don't have an account?<a href="signup.html">Sign up</a></span>
+                        
+                    </form> 
+                </fieldset>
             </section>
-        </main>
+        </div>
         <script src="login.js"></script>
     </body>
 </html>
