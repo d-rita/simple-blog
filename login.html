@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Simple Blog</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     </head>
     <body>
@@ -10,19 +11,19 @@
         </header>
         <main>
             <section>
-                <form id="login-form" onsubmit="">
+                <form id="login-form" onsubmit="login()">
                     <fieldset>
                         <legend>Login</legend>
-                        <label for="email">Email Address</label>
-                        <input type="email" name="email" id="email">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <label for="email-login">Email Address</label>
+                        <input type="email" name="email" id="email-login" autocomplete="email">
+                        <label for="password-login">Password</label>
+                        <input type="password" name="password" id="password-login" autocomplete="current-password">
                         <button type="submit">Login</button>
-                        <p>Don't have an account?<a href="index.html"> Sign up</a></p>
+                        <p>Don't have an account?<a href="signup.html"> Sign up</a></p>
                     </fieldset>
                 </form> 
             </section>
         </main>
-        <script src="main.js"></script>
+        <script src="login.js"></script>
     </body>
 </html>

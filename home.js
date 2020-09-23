@@ -52,7 +52,6 @@ function displayAllPosts(){
 
 function deletePost() {
     let deleteButtons = document.querySelectorAll('.delBtn');
-    console.log(deleteButtons);
 
     let storage = JSON.parse(localStorage.getItem('appStorage'));
     let { posts } = storage;
@@ -70,7 +69,6 @@ function deletePost() {
 
 function editPost() {
     let editButtons = document.querySelectorAll('.editBtn');
-    console.log(editButtons);
 
     let storage = JSON.parse(localStorage.getItem('appStorage'));
     let { posts } = storage;

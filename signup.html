@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Simple Blog</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     </head>
     <body>
@@ -10,23 +11,23 @@
         </header>
         <main>
             <section>
-                <form id="signup-form" onsubmit="">
+                <form id="signup-form" onsubmit="signUp()">
                     <fieldset>
                         <legend>Signup</legend>
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="first-name" id="first-name" autocomplete="given-name">
                         <label for="surname">Surname</label>
-                        <input type="text" name="surname" id="surname">
+                        <input type="text" name="surname" id="surname" autocomplete="family-name">
                         <label for="email">Email Address</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" autocomplete="email">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" autocomplete="new-password">
                         <button type="submit">Create Account</button>
                         <p>Already have an account?<a href="login.html"> Login</a></p>
                     </fieldset>
                 </form> 
             </section>
         </main>
-        <script src="main.js"></script>
+        <script src="signup.js"></script>
     </body>
 </html>
